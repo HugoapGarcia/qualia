@@ -24,6 +24,10 @@ function App() {
     getCurrentlocation()
   }, [toggle, useLocation])
 
+  /**
+   * @description Get and Set user location browser to determine the 
+   * local weather.
+   */
   function getCurrentlocation() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
@@ -56,9 +60,9 @@ function App() {
 
           setCity(data.name)
 
-          setCelsious((data.main.temp - 273.15).toFixed(2) + ' C');
+          setCelsious((data.main.temp - 273.15).toFixed(2));
           let _fah = (data.main.temp * 9 / 5) - 459.67;
-          setFahrenheit(_fah.toFixed(2) + ' F');
+          setFahrenheit(_fah.toFixed(2));
 
         })
       console.log("%cpass: " + useLocation, "color: green");
@@ -70,13 +74,24 @@ function App() {
     }
   }
 
+  /**
+   * 
+   * @returns Span Html to be display in UI
+   */
+  function isCelsiousOrFahrenheit() {
+    if (toggle) {
+      return <span>{celsious} &#8451;</span>
+    }
+    return <span>{fahrenheit} &#x2109;</span>
+  }
+
   return (
     <>
       <div className="weather">
         {useIcon ? <img src={`http://openweathermap.org/img/wn/${useIcon}.png`} alt='weather' /> : <></>}
 
         <h1>{usecity}</h1>
-        <label>{toggle ? celsious : fahrenheit}</label> <br />
+        {isCelsiousOrFahrenheit()}<br /><br/>
         <button disabled={useLocation ? false : true} onClick={(e) => getWeather(e)}>Get Weather</button> <br />
         <button disabled={useLocation ? false : true} onClick={(e) => setToggle(!toggle)}>Celsious/Fahrheit</button>
       </div>
