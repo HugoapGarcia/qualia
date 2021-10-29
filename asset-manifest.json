@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/qualia/static/css/main.b323705c.chunk.css",
-    "main.js": "/qualia/static/js/main.07a587f8.chunk.js",
-    "main.js.map": "/qualia/static/js/main.07a587f8.chunk.js.map",
+    "main.css": "/qualia/static/css/main.31a3e977.chunk.css",
+    "main.js": "/qualia/static/js/main.795e9f2d.chunk.js",
+    "main.js.map": "/qualia/static/js/main.795e9f2d.chunk.js.map",
     "runtime-main.js": "/qualia/static/js/runtime-main.a0868eca.js",
     "runtime-main.js.map": "/qualia/static/js/runtime-main.a0868eca.js.map",
     "static/js/2.fe629da7.chunk.js": "/qualia/static/js/2.fe629da7.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.1779f6de.chunk.js": "/qualia/static/js/3.1779f6de.chunk.js",
     "static/js/3.1779f6de.chunk.js.map": "/qualia/static/js/3.1779f6de.chunk.js.map",
     "index.html": "/qualia/index.html",
-    "static/css/main.b323705c.chunk.css.map": "/qualia/static/css/main.b323705c.chunk.css.map",
+    "static/css/main.31a3e977.chunk.css.map": "/qualia/static/css/main.31a3e977.chunk.css.map",
     "static/js/2.fe629da7.chunk.js.LICENSE.txt": "/qualia/static/js/2.fe629da7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a0868eca.js",
     "static/js/2.fe629da7.chunk.js",
-    "static/css/main.b323705c.chunk.css",
-    "static/js/main.07a587f8.chunk.js"
+    "static/css/main.31a3e977.chunk.css",
+    "static/js/main.795e9f2d.chunk.js"
   ]
 }
